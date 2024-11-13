@@ -2,3 +2,4 @@ backend/
 node_modules/
 static/images/
 static/css/
+.DS_Store.DS_Store
