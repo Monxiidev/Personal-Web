@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    
+    <link rel="icon" href="/static/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/favicons/site.webmanifest">
+
+    <!-- Author Meta -->
+    <meta name="author" content="Montse Vasco Delgado">
+    <!-- Meta Description -->
+    <meta name="description" content="Montse is a Full-stack web developer student with a keen interest in providing web solutions with efficiency and durability..">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="Python backend developer">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title> Montse Vasco Delgado </title>
+    
+    <!-- Estilo de fondo -->
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <!-- Añadir librerías GSAP y ScrollTrigger aquí -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+    <!-- CSS links ============================================= -->
+    
+    <link rel="stylesheet" href="/static/css/linearicons.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+
+
+<!-- Header section -->
+<header>
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="logo-box"><a href="#hero">Montse Vasco Delgado</a></div>
+            <ul class="menu-items">
+                <div class="icn btn-cancel">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li><a href="#about" data-translate>About</a></li>
+                <li><a href="#services" data-translate>Services</a></li>
+                <li><a href="#portfolio" data-translate>Portfolio</a></li>
+                <li><a href="#contacts" data-translate>Contact</a></li>
+                <li>
+                    <select id="language-select" onchange="translatePage()">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="pt">Português</option>
+                        <option value="fr">Français</option>
+                        <option value="it">Italiano</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="icn btn-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End of Header section -->
+
+
+<!--Main content section-->
+<div id="page-wrap">
+    
+
+<div class="main-panel">
+    <!-- Hero section -->
+    <section id="hero">
+<!--        Try using data-src instead of data-image-src-->
+        <div class="hero-section" data-parallax="scroll"
+             data-image-src="{% static 'image now displayed in css as this on had issues with
+             displaying on mobile' %}">
+            <div class="overlay-bg overlay"></div>
+            <div class="container">
+                <div class="row fullscreen">
+                    <div class="hero-content col-lg-12">
+                        <div class="col-md-12">
+                            <h3 data-translate>Hi there,</h3>
+                            <h1 data-translate>Montse Vasco Delgado</h1>
+                            <p data-translate>I am a full-stack web developer student with a keen interest in bringing amazing ideas to life, and building innovative solutions that shape the world.</p>
+                            <p data-translate>I'm deeply invested in crafting intuitive and visually appealing web applications that provide seamless user experiences.</p>    
+                            <a href="#portfolio" class="btn cta" type="button">Portfolio</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of hero section -->
+
+    <!--	Start about section-->
+    <section id="about" class="section-gap">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="/static/images/personal/Me2.jpg">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title mb-4" data-translate> About <span>Me</span></h1>
+                <h2 class="mb-4" data-translate>Full-Stack Web Developer student</h2>
+                <p class="text-justify" data-translate>
+                    I am a full-stack web developer student with a keen interest in bringing amazing ideas to life, and building innovative solutions that shape the world.
+                    I'm deeply invested in crafting intuitive and visually appealing web applications that provide seamless user experiences.
+                    With a strong background in the Full-Stack Web Development Master's program from Conquer Blocks and a keen eye for design.
+                </p>
+                <p class="text-justify" data-translate>
+                    I have worked on a variety of personal projects, the only project as freelance has been for the National Museum of Natural Sciences (MNCN-CSIC).
+                    Having me in your team will be a step in the right direction and I can't wait to amaze you.
+                    Outside of work, I enjoy staying up-to-date with the latest trends and techniques in web development and software engineering, and I'm always looking forward to new challenges and opportunities to grow my skillset.
+                    I am also a strong believer in the power of collaboration, and enjoy working with a team to create innovative and impactful projects.
+                </p>
+            
+                <a href="/static/docs/CV.pdf" class="btn cta" data-translate target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- End About Area -->
+
+    <!--Services area-->
+    <section id="services">
+
+        <div class="features">
+            <h1 class="section-title" data-translate> <span>Services</span></h1>
+            <div class="container">
+                <div class="row feature-items">
+                    <div class="services-intro text-justify">
+                        <p data-translate>From April 2024, I decided to change the course of my life. 
+                            Since then, web development and software engineering have been my bread and butter. 
+                            In these months, I have discovered how well I can apply my skills to help startups and
+                            companies scale their businesses and generate more leads. Below are some ways 
+                            I can achieve that:</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <h4 data-translate>Web Design</h4>
+                            <p class="text-justify" data-translate>Design is the core of my work, and I believe 
+                                in the power of brand. I bring ideas to life by designing experiences 
+                                that communicate visually inspiring stories guaranteed to produce results. 
+                                I do this by deploying creative methodologies in producing designs tailored to meet
+                                your user's needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+                                <h4 data-translate>E-commerce Development</h4>
+                            <p class="text-justify" data-translate>Selling products online is 
+                                now more competitive and intense than ever before. 
+                                Sellers now spend huge budgets on ads every year. 
+                                This is where I come in. I will help you design sales-driven
+                                e-commerce platforms that resonate with your audience 
+                                and command sales without spending money on ads.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-file-code-o fa-2x"></i>
+                            <h4 data-translate>Apps</h4>
+                            <p class="text-justify" data-translate>One of the things I love is 
+                                building robust and user-friendly applications that deliver 
+                                seamless performance across devices. Whether it's developing a new 
+                                app from the ground up or enhancing existing functionalities, 
+                                I am dedicated to providing efficient, secure, and scalable solutions
+                                that meet your business needs and exceed your expectations.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-code fa-2x"></i>
+                            <!--<i class="fi flaticon-beach"></i>-->
+                            <h4 data-translate>Full-stack Development</h4>
+                            <p class="text-justify" data-translate>I enjoy the challenge of building 
+                                robust web applications that can handle high volumes of traffic 
+                                and transactions. If you're looking for a developer
+                                with a passion for building innovative and user-friendly
+                                applications, let's work together to bring your amazing ideas to life.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#263a4e" fill-opacity="1"
+              d="M0,0L48,26.7C96,53,192,107,288,112C384,117,480,75,576,53.3C672,32,768,32,864,32C960,32,1056,32,1152,48C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+    <!--end of services section-->
+
+    <!-- Start portfolio Area -->
+    <section id="portfolio" class="section-gap">
+        <div class="portfolio-area">
+            <h1 class="section-title" data-translate>Recent <span>Projects</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                            <img class="card-img-top" src="/static/images/personal/Interfaz.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-translate>AI-powered audio translator</h5>
+                                <p class="card-text" data-translate>This project is a web application that uses artificial intelligence to transcribe and translate audio into multiple languages. The application transcribes the audio, automatically detects the original language, translates the transcribed text into the languages selected by the user, and generates audio files with the corresponding translation.</p>
+                                <div class="text-center"><a href="https://github.com/Monxiidev/Traductor-de-audio-con-IA" class="btn my-btn" target="_blank" data-translate>Visit Project</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                           <img class="card-img-top" src="/static/images/personal/Web.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-translate>My Portfolio Website</h5>
+                                <p class="card-text" data-translate>Montse is a full stack developer with a keen interested in bringing amazing ideas to life, and facilitating the ease of accessibility of digital contents. he has a passion for creating intuitive and visually appealing websites and applications that provide seamless user experiences. The project was designed with Python, Django and Jinja2 templating.</p>
+                                <div class="text-center"><a href="https://nsikanadaowo.onrender.com/" class="btn my-btn" target="_blank" data-translate>Visit Project</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                           <img class="card-img-top" src="/static/images/personal/WEB DAVID.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" data-translate>David Canal Research</h5>
+                                <p class="card-text" data-translate>This project marked my debut as a freelance developer, where I had the opportunity to design and develop a personal website for David Canal, a researcher at the National Museum of Natural Sciences (MNCN-CSIC). The project involved creating a professional and engaging digital presence that highlights his work, academic background, and contributions to the field of natural sciences.</p>
+                                <div class="text-center"><a href="https://nsikanadaowo.onrender.com/" class="btn my-btn" target="_blank" data-translate>Visit Project</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End portfolio Area -->
+
+    <!--    Site features area-->
+
+    <section id="site-features-area">
+
+        <div class="site-features-area">
+            <h1 class="section-title site-feature-item-title" data-translate>I build projects <span>That are:</span></h1>
+            <div class="container">
+                <div class="row feature-items">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-mobile fa-2x"></i>
+                            <h4 data-translate>Mobile responsive</h4>
+                                <p class="text-justify" data-translate>Every project I build are 
+                                    mobile-friendly and properly optimized for search engines. I prioritize 
+                                    aesthetics and performance in the design process and I'm 
+                                    always committed to exceeding your expectations. I ensure that
+                                    every product delivered is pixel-perfect, hence 
+                                    giving your users the best experience possible. My commitment
+                                    is to ensure that your project makes an impact and connects 
+                                    with the people that matter to you.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-rocket fa-2x"></i>
+                            <h4 data-translate>Fast loading</h4>
+                            <p class="text-justify" data-translate>First impressions make all the difference. 
+                                With fast-loading, SEO-friendly and mobile-ready applications, 
+                                you can be sure of giving your clients that professional touch 
+                                that will keep them glued to your brand. I make use of the 
+                                fastest and cleanest code available for lightning fast loading
+                                speeds, and advanced web technologies to optimize for efficiency, without compromising its style 
+                                or function.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature">
+                            <i class="fa fa-shield fa-2x"></i>
+                            <h4 data-translate>Safe and secure</h4>
+                                <p class="text-justify" data-translate>I build projects using the latest technology
+                                    to ensure it’s safe, secure, and easy for you to manage. I build
+                                    state-of-the-art products with security in mind. This will 
+                                    guarantee the confidence of clients in your brand. 
+                                    I provide high-quality
+                                    web solutions that will grow your business and ensure you 
+                                    reach your business goals within the shortest time possible.
+                                </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>
+
+    <section id="site-features-area">
+    </section>
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="#f3f3f3">
+                    <path
+                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                    ></path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#263a4e">
+                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                              opacity="0.100000001"></path>
+                        <path
+                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                                opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                              opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+
+    <!--    End of site features area-->
+
+    <!--    Contacts section -->
+    <section id="contacts">
+        <div class="contacts container">
+            <div>
+                <h1 class="section-title" data-translate>Get  <span>In Touch</span></h1>
+            </div>
+            <div class="contacts-body">
+
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-map-marker fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2 data-translate>Seville/Remote</h2>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-phone fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2>+34 634 734 662</h2>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-envelope-o fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2><a href="mailto:david@gmail.com">montsevd14@gmail.com</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    End of contacts  section-->
+
+    <!--    Footer section-->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1 data-translate>Let´s connect</h1></div>
+            <div class="social-icons">
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/montsevascod" target="_blank"><i
+                            class="fa fa-linkedin fa-fw"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://x.com/Montse_VascoD" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                </div>
+        
+                <div class="social-item">
+                    <a href="https://github.com/Monxiidev" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/montse_vascod/?hl=es" target="_blank"><i
+                            class="fa fa-instagram fa-fw"></i></a>
+                </div>
+            </div>
+            <p data-translate>Copyright &copy; <span><script>document.write(new Date().getFullYear())</script>
+                </span> . All rights reserved
+            </p>
+        </div>
+    </section>
+    <!--    End of footer section-->
+</div>
+
+
+
+</div>
+<!--End of main content section -->
+
+<!--Javascript links-->
+
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="/static/js/vendor/bootstrap.min.js"></script>
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+<script src="/static/js/parallax.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="{% static 'js/isotope.pkgd.min.js}"></script>
+<script src="/static/js/jquery.nice-select.min.js"></script>
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/jquery.sticky.js"></script>
+<script src="/static/js/getbutton.js"></script>
+<script src="/static/js/main.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // registra el plugin de ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        const hero = document.querySelector('#hero');
+
+        // Configura la animación de gsap con ScrollTrigger
+        gsap.to(hero, {
+            backgroundPosition: 'center 50%', // Ajusta según necesites
+            ease: "none",
+            scrollTrigger: {
+                trigger: hero,
+                start: "top top", // Inicio de la animación
+                end: "bottom top", // Fin de la animación
+                scrub: true // Permite que la animación sea controlada por el scroll
+            }
+        });
+
+        // Código anterior de cambio de imagen del carrusel
+        const images = [
+            "../static/images/personal/carrusel 1.jpg",
+            "../static/images/personal/coding screen - edited.jpg",
+            "../static/images/personal/carrusel 2.jpg",
+            "../static/images/personal/carrusel 3.jpg"
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            hero.style.backgroundImage = `url('${images[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        changeBackground(); 
+        setInterval(changeBackground, 8000); 
+    });
+    
+</script>
+<!-- Translation script-->
+<script>
+    async function translateText(text, targetLanguage) {
+        const response = await fetch('http://localhost:3000/translate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                text: text,
+                targetLanguage: targetLanguage
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Error translating text');
+        }
+
+        const data = await response.json();
+
+        // Limpieza adicional en el texto traducido para caracteres especiales
+        let translatedText = data.translation;
+        translatedText = translatedText.replace(/&#39;/g, "'").replace(/´/g, "'");
+
+        return translatedText;
+    }
+
+    async function translatePage() {
+        const selectedLanguage = document.getElementById("language-select").value;
+        const elementsToTranslate = document.querySelectorAll("[data-translate]");
+
+        for (let element of elementsToTranslate) {
+            const originalText = element.getAttribute("data-original-text") || element.innerText;
+
+            // Preprocesa el texto original reemplazando caracteres especiales
+            const cleanText = originalText.replace(/&#39;/g, "'").replace(/´/g, "'");
+
+            const translatedText = await translateText(cleanText, selectedLanguage);
+            element.innerText = translatedText;
+            element.setAttribute("data-original-text", originalText); // Guardar el texto original
+        }
+    }
+</script>
+<!-- Botón de WhatsApp -->
+<a href="https://wa.me/34634732339?text=Hola%2C%20me%20gustar%C3%ADa%20contactarte" target="_blank">
+    <img src="/static/images/personal/WhatsApp.png" alt="Contactar por WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 1000;">
+</a>
+
+<link rel="stylesheet" href="/static/css/main.css">
+</body>
+</html>
+

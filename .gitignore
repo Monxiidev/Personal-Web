@@ -1,0 +1,4 @@
+backend/
+node_modules/
+static/images/
+static/css/
